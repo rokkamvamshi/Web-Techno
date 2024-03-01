@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Menu</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('vidyabikethan logo.jpeg');
+      background-repeat: repeat;
+      background-size: 100px;
+      
+    }
+    .menu-item {
+      padding: 10px;
+      margin: 5px;
+      border: 1px solid #ccc;
+      cursor: pointer;
+      color: aqua;
+      background-color: chartreuse;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="menu-item" onclick="showDescription('Item 1')">Item 1</div>
+  <div class="menu-item" onclick="showDescription('Item 2')">Item 2</div>
+  <div class="menu-item" ondblclick="eraseItem(this)">Item 3</div>
+
+  <script>
+    function showDescription(itemName) {
+      alert("Description for " + itemName);
+    }
+
+    function eraseItem(item) {
+      item.remove();
+    }
+
+    window.onresize = function() {
+      document.body.innerHTML = "<div style='text-align: center; padding: 20px;'>Please reload to view the menu</div>";
+    };
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Information Form</title>
+  <style>
+    #image{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+  </style>
+  </head>
+<body>
+
+    <h1 style="font-size: larger; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: red;font-weight: 800; align-content: center; align-items: center;align-self: center;" >User Information Form </Form></h1>
+    <div style="align-items: center;align-self: center;">
+      <img id="image"  src="gradient-minimalist-background/8270301.jpg" width="1550px" height="930px">
+    <form style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: rgb(0, 0, 0); font-weight: 600;"  action="" method="post">
+
+        <fieldset>
+      <legend>User Details</legend>
+      <label for="firstName"> </label>First Name:</label>
+      <input type="text" id="firstName" name="firstName" required><br><br>
+      <label for="email" >Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      <label for="rollno">Roll No:</label>
+      <input type="text" required id="rollno" name="rollno">
+    </fieldset>
+<br><br>
+    <fieldset style="align-items: center;">
+      <legend style="align-content: center;">Address & Contact</legend>
+      Present Address: <br><br>
+      <label for="line1">Line 1:</label>
+      <input type="text" id="line1" name="line1" required><br><br>
+      <label for="line2">Line 2:</label>
+      <input type="text" id="line2" name="line2"><br><br>
+      <label for="zipCode" >Zip Code:</label>
+      <input type="text" id="zipCode" name="zipCode" required size="6"><br><br>
+      <label for="contactEmail">Contact Email:</label>
+      <input type="email" id="contactEmail" name="contactEmail" required size="25"><br><br>
+    </fieldset>
+<br><br>
+    <fieldset>
+      <legend>Professional Details</legend>
+      <label for="education">Education:</label>
+      <input type="text" id="education" name="education" required><br><br>
+      <label for="qualification">Qualification:</label>
+      <input type="text" id="qualification" name="qualification" required><br><br>
+      <label for="technologies">Technologies:</label>
+      <input type="text" id="technologies" name="technologies"><br><br>
+      <label for="projects">Projects:</label><br><br>
+      <textarea id="projects" name="projects"></textarea><br><br>
+      <label for="internships">Internships:</label><br><br>
+      <textarea id="internships" name="internships"></textarea><br><br>
+    </fieldset>
+<br><br>
+    <button style="font-weight: bold; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-style: oblique; align-items: center;">Submit</button>
+  </form>
+    </div>
+</body>
+</html>

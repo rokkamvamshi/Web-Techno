@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        h1{
+            background-color: aqua;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 600;
+            align-items: center;
+        }
+        h3{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 500;
+            color: azure;
+
+        }
+        #image{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+       
+          
+        
+        </style>
+</head>
+<body>
+    <h1 align="center">Register For the Hacker's MeetUp</h1>
+    <img id="image" src="https://res.cloudinary.com/fluid-attacks/image/upload/v1657548989/blog/top-10-offensive-security-events/cover_conferences.webp" alt="Uh! Sorry image broke" width="1550">
+    <fieldset>
+    <h3>Fill the below form:</h3>    
+    <form  id="form" style="position: relative; z-index: 1; color: azure;font-size: larger;" action="Task6.1.html" target="_self" method="">
+        Name: <input type="text" value="" required> <br><br>
+        Email: <input type="email" required><br><br>
+        Date: <input type="date" required> <br><br>
+        Password: <input type="password" required> <br><br>
+        Confirm Password: <input type="password" required> <br><br>
+        <a style="color: azure; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-weight: 600;" target="_blank" href="https://google.com">Click Here for Payment Options</a><br><br>
+        Upload the Payment Screenshot:
+        <input type="file"> <br><br>
+        <button onclick="alert('Hang on! You are being redirected...')">Submit</button>
+    </form>
+</fieldset>
+    
+   
+</body>
+</html>
